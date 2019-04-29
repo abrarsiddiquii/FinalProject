@@ -15,7 +15,8 @@ public class OpenWeatherMap {
     private String name;
     private int cod;
 
-    public OpenWeatherMap() { }
+    public OpenWeatherMap() {
+    }
 
     public OpenWeatherMap(Coord coord, List<Weather> weather, String base, Main main, Wind wind, Clouds clouds, int dt, Sys sys, int id, String name, int cod) {
         this.coord = coord;
