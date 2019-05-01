@@ -21,15 +21,15 @@
         android:layout_marginBottom="16dp"
         android:gravity="center"
         android:text="H O M E"
+        android:textAllCaps="true"
         android:textColor="@color/colorAccent"
         android:textSize="40sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.745" />
+        app:layout_constraintVertical_bias="0.782" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -49,12 +49,12 @@
         app:srcCompat="@mipmap/ic_launcher_foreground" />
 
     <Button
-        android:id="@+id/next1"
-        android:layout_width="wrap_content"
-        android:layout_height="37dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
+        android:id="@+id/next"
+        android:layout_width="87dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="672dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:text="NEXT"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

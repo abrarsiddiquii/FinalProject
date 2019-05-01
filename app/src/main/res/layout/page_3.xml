@@ -16,27 +16,15 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text="Dailiy Suggestions"
-        android:textSize="30sp"
+        android:text="Categories of Activities"
+        android:textAppearance="@style/AppTheme"
+        android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintStart_toEndOf="@+id/back2"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ListView
-        android:layout_width="395dp"
-        android:layout_height="659dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/back2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -46,4 +34,108 @@
         android:text="Back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/wild"
+        android:layout_width="116dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginBottom="73dp"
+        android:text="Activities in the Wild"
+        app:layout_constraintBottom_toTopOf="@+id/winter"
+        app:layout_constraintEnd_toStartOf="@+id/activities"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.77" />
+
+    <Button
+        android:id="@+id/winter"
+        android:layout_width="115dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="84dp"
+        android:text="Activities for the Winter"
+        app:layout_constraintBottom_toTopOf="@+id/outdoor"
+        app:layout_constraintEnd_toStartOf="@+id/activities"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wild" />
+
+    <Button
+        android:id="@+id/outdoor"
+        android:layout_width="114dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="76dp"
+        android:text="Outdoor Sports"
+        app:layout_constraintBottom_toTopOf="@+id/water"
+        app:layout_constraintEnd_toStartOf="@+id/activities"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/winter" />
+
+    <Button
+        android:id="@+id/water"
+        android:layout_width="112dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="138dp"
+        android:text="Water Sports"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/activities"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outdoor" />
+
+    <TextView
+        android:id="@+id/activities"
+        android:layout_width="143dp"
+        android:layout_height="484dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.281"
+        tools:layout_editor_absoluteX="148dp" />
+
+    <TextView
+        android:id="@+id/intensity"
+        android:layout_width="83dp"
+        android:layout_height="478dp"
+        tools:layout_editor_absoluteX="309dp"
+        tools:layout_editor_absoluteY="122dp" />
+
+    <TextView
+        android:id="@+id/activitiesLabel"
+        android:layout_width="128dp"
+        android:layout_height="17dp"
+        android:text="Activities"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="88dp" />
+
+    <TextView
+        android:id="@+id/intensityLabel"
+        android:layout_width="83dp"
+        android:layout_height="18dp"
+        android:text="Intensity"
+        tools:layout_editor_absoluteX="302dp"
+        tools:layout_editor_absoluteY="89dp" />
+
 </android.support.constraint.ConstraintLayout>

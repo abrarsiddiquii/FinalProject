@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button = (Button) findViewById(R.id.next1);
+        Button button = (Button) findViewById(R.id.next);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,12 +52,12 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         // To control.
 
         txtCity = (TextView) findViewById(R.id.txtCity);
-        txtLastUpdate = (TextView) findViewById(R.id.txtLastUpdate);
-        txtDescription = (TextView) findViewById(R.id.txtDescription);
-        txtHumidity = (TextView) findViewById(R.id.txtHumidity);
-        txtTime = (TextView) findViewById(R.id.txtTime);
-        txtCelsius = (TextView) findViewById(R.id.txtCelsius);
-        imageView = (ImageView) findViewById(R.id.imageView);
+//        txtLastUpdate = (TextView) findViewById(R.id.txtLastUpdate);
+//        txtDescription = (TextView) findViewById(R.id.txtDescription);
+//        txtHumidity = (TextView) findViewById(R.id.txtHumidity);
+//        txtTime = (TextView) findViewById(R.id.txtTime);
+//        txtCelsius = (TextView) findViewById(R.id.txtCelsius);
+//        imageView = (ImageView) findViewById(R.id.imageView);
 
 
         // To get the coordinates.
@@ -83,9 +83,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         if (location == null) {
             Log.e("TAG", "No Location");
         }
-        public void nextPage(View view) {
 
-        }
     }
 
 
@@ -169,7 +167,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
             String urlString = strings[0];
 
             Helper http = new Helper();
-            stream = http.getHTTPData(urlString);
+            // stream = http.getHTTPData(urlString);
             return stream;
         }
 
