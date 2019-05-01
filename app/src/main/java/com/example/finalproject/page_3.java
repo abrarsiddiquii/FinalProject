@@ -105,8 +105,13 @@ public class page_3 extends AppCompatActivity {
         water[3][0] = "Playing Beach Volleyball";
         water[3][1] = "3";
         water[4][0] = "Parasailing";
-        water[4][1] = "2";
-
+        water[4][1] = "3";
+        water[5][0] = "Snorkeling";
+        water[5][1] = "2";
+        water[6][0] = "Waterskiing";
+        water[6][1] = "4";
+        water[7][0] = "Outdoor Waterpark";
+        water[7][1] = "2";
     }
 
     public void printWater(String[][] array) {

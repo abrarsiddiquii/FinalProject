@@ -25,8 +25,8 @@ public class page_2 extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent nextPage = new Intent(page_2.this, page_3.class);
-                page_2.this.startActivity(nextPage);
+                Intent backPage = new Intent(page_2.this, MainActivity.class);
+                page_2.this.startActivity(backPage);
             }
 
         });
