@@ -3,6 +3,7 @@ package com.example.finalproject;
 import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Criteria;
 import android.location.Location;
@@ -14,6 +15,8 @@ import android.support.constraint.solver.widgets.Helper;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -34,6 +37,17 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button button = (Button) findViewById(R.id.next1);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent nextPage = new Intent(MainActivity.this, page_2.class);
+                MainActivity.this.startActivity(nextPage);
+            }
+        });
+
 
         // To control.
 
@@ -68,6 +82,9 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         Location location = locationManager.getLastKnownLocation(provider);
         if (location == null) {
             Log.e("TAG", "No Location");
+        }
+        public void nextPage(View view) {
+
         }
     }
 
